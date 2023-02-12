@@ -27,5 +27,17 @@ There are several reasons why Drupal is a popular choice for building websites:
 
 Overall, Drupal is a powerful, flexible, and secure platform that provides a range of features and tools to build and maintain websites. Its large and active community and commitment to accessibility and usability make it a popular choice for many organizations and individuals.
 
+## How to start learn about drupal? ##
+
+If you're new to Drupal, here are some steps you can follow to start learning about this powerful content management system:
+
+**Get familiar with the basics:** Start by learning the basics of Drupal, such as what it is, what it's used for, and the core concepts of Drupal site building. This will give you a good foundation for learning the more advanced topics.
+
+**Read the official documentation:** The official Drupal documentation is a great resource for learning about Drupal. It covers a wide range of topics, from installation and configuration to site building and customization. You can find the official Drupal [documentation](https://www.drupal.org/docs).
+
+**Join the Drupal community:** The Drupal community is a great place to ask questions, get advice, and connect with other Drupal users and developers. You can join the Drupal community by visiting the [Drupal website](https://www.drupal.org/community).
+
+**Try building a site:** The best way to learn Drupal is by building a site yourself. Start with a simple site and gradually build your skills as you gain more experience. You can find tutorials and guides online to help you get started.
+
 
 :house: [Home Page](README.md) | [Next Page >>](drupal-site-building.md)
