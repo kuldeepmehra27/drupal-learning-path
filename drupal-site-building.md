@@ -29,8 +29,8 @@ Drupal site building requires a range of technical skills, including knowledge o
 [An aggregator for the RSS feeds for most Drupal related blogs and websites](http://planet.drupal.org)
 
 Very Nice Tutorial to Kickstart Drupal:
-
-[Drupal Site Building](https://www.webwash.net/courses/drupal-8-site-building/lessons/entities-content-types-fields/topic/introduction-entities-fields/)
+1. [Building Websites with Drupal 8 & 9](https://www.drupaltutor.com/courses/drupal-8/building-websites)
+2. [Drupal Site Building](https://www.webwash.net/courses/drupal-8-site-building/lessons/entities-content-types-fields/topic/introduction-entities-fields/)
 
 Reference Links:
 1. [Drupal official link to learn about site building](https://www.drupal.org/docs/user_guide/en/index.html)
