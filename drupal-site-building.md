@@ -45,9 +45,8 @@ Youtube Videos Referecne links to learn about Drupal Site Building:
 
 Setup a free drupal site:
 
-[Using Pantheon.io to learn Drupal](https://www.youtube.com/watch?v=bk_PUcDKpQA)
-
-[Using Drupal with Pantheon](https://pantheon.io/docs/develop-drupal)
+1. [Using Pantheon.io to learn Drupal](https://www.youtube.com/watch?v=bk_PUcDKpQA)
+2. [Using Drupal with Pantheon](https://pantheon.io/docs/develop-drupal)
 
 
 :house: [Home Page](README.md) | [<< Previous Page](README.md)
