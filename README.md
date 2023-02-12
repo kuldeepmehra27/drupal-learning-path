@@ -28,4 +28,4 @@ There are several reasons why Drupal is a popular choice for building websites:
 Overall, Drupal is a powerful, flexible, and secure platform that provides a range of features and tools to build and maintain websites. Its large and active community and commitment to accessibility and usability make it a popular choice for many organizations and individuals.
 
 
-
+:house: [Home Page](README.md) | [Next Page >>](drupal-site-building.md)
