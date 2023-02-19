@@ -25,5 +25,19 @@ example.content:
 
 [Click here](https://www.drupal.org/docs/drupal-apis/routing-system/structure-of-routes) to get more details about routes structure.
 
+#### Using parameters in routes ####
+1. Define the route with parameters in the YAML format like below:
+```
+mymodule.example:
+  path: '/example/{name}'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\MyController::example'
+  requirements:
+    _permission: 'access content'
+```
+In this example, we are defining a route named mymodule.example with a path of /example/{name}. The curly braces around parameter indicate that it is a dynamic parameter. The defaults key specifies the controller that will handle this route. The requirements key sets the permission required to access this route.
+
+2. Create the controller class in your module & pass this **name** paramerter. This pararmeter name should be same as mentioned in routing.yml file. To see what additional parameters are available in Drupal, [check the documentation.](https://www.drupal.org/docs/8/api/routing-system/parameters-in-routes/using-parameters-in-routes)
+
 References:
 [Drupal routing system](https://www.drupal.org/docs/drupal-apis/routing-system)
