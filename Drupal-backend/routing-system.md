@@ -5,6 +5,8 @@ Routing in Drupal is handled by the Drupal menu system, which provides a structu
 
 Routing in Drupal also includes the ability to define custom URLs for content and functionality. This allows developers to create custom routes.
 
+[Click here](https://www.drupal.org/docs/drupal-apis/routing-system/routing-system-overview#s-routes-and-controllers) to get how route system works.
+
 #### routing.yml files #### 
 A module would define routing rules in **module_name.routing.yml**.
 Example:
