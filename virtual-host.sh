@@ -1,5 +1,5 @@
 # chmod u+x nameofthescript
-# sudo ./virtual-host.sh ntrack.local /var/www/html/drupal
+# sudo ./virtual-host.sh my-site.local /var/www/html/drupal/web
 
 #!/bin/bash
 name=$1
