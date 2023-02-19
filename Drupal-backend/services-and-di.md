@@ -46,6 +46,32 @@ It simply means passing the service (i.e. dependency) to the client (i.e. depend
 
 There's a comprehensive list of all the services in Drupal core available on api.drupal.org [here](https://api.drupal.org/api/drupal/services). Use the filter at the top of the page to find what you're looking for. The first column in the table contains the unique machine name of the service which you can use to request it from the service container.
 
-**Injecting the service into our Controller**
+#### Using Services in Drupal ####
+There are essentially two ways **statically** and **injected**. The first is done by a static call to the
+Service Container, whereas the second uses dependency injection to pass the object through the
+constructor (or in some rare cases, a setter method). However, let's check out how, why, and what is
+the real difference.
+Statically, you would use the global **Drupal** class to instantiate a service:
+> $service = \Drupal::service('hello_world.my_service');
+
+This is how we use services in the **.module** files and classes which are not exposed to the Service
+Container and into which we cannot inject. Instances of the latter are rare though, most of the time we
+use the static calls only from within static contexts.
+A few popular services also have shorthand methods on the **\Drupal** class: for example,
+**\Drupal::entityTypeManager()**. I recommend that you inspect the **\Drupal** class and take a look at the ones
+with shorthand methods available.
+
+**Note:** The proper way to use services is to inject them where needed like inside a Controller, service, plugin or any other class where dependency injection is an option.
+
+#### How to create custom drupal services? ####
+- Define the service: First, you need to define your custom service in a custom module. You can define it in your module's .services.yml file or in a separate file. For example:
+  ![Custom Service YML](../images/my_module.services.yml.png)
+This code defines a service with the ID **my_module.data_service**, using the class MyCustomService in the **Drupal\my_module** namespace. The service has one dependencies injected, the database service.
+
+- Create the service class: Next, you need to create the class for your custom service. For example:
+  ![Custom Service](../images/MyCustomeService.png)
+  
+References:
+- [Drupal official doc](https://www.drupal.org/docs/drupal-apis/services-and-dependency-injection/services-and-dependency-injection-in-drupal-8)
 
 
