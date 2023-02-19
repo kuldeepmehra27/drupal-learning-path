@@ -1,4 +1,4 @@
-# Services #
+# Services and Dependency Injection #
 #### What is Services? ####
 A service is any object managed by the services container.
 
