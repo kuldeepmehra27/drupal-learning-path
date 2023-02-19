@@ -25,27 +25,6 @@ Controllers in Drupal are used for handling requests and implementing the applic
 - Controllers help implement the application logic of a Drupal site and build dynamic and interactive web applications.
 
 Example:
-```
-<?php 
+![Controller](/images/controller.png)
 
-namespace Drupal\my_module\Controller;
-
-use Drupal\Core\Controller\ControllerBase;
-
-/**
- * Provides a page controller for the custom module.
- */
-class MyModuleController extends ControllerBase {
-
-  /**
-   * Returns a simple response for the "hello" page.
-   */
-  public function helloPage() {
-    $build = [
-      '#markup' => $this->t('Hello World!'),
-    ];
-    return $build;
-  }
-
-}
-```
+:house: [Home Page](README.md) | [<< Previous Page](routing-system.md) | [Next Page >>](services-and-di.md)
