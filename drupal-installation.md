@@ -43,3 +43,13 @@ Rest of same as above.
 into **html** directory and follow instruction mentioned on top of script file.
 
 [Drupal official document link](https://www.drupal.org/docs/develop/using-composer/manage-dependencies)
+
+#### Composer Installer ####
+By default, Composer downloads packages to the vendor directory. But Drupal requires that some packages be downloaded to a different location. For instance, contributed modules must be downloaded to modules/ in order for Drupal to find them. (And you may also want to place contributed modules in modules/contrib.)
+
+This is a common issue amongst PHP frameworks that rely on Composer. To solve this problem, the Composer team has created the Composer Installers plugin. The plugin defines new types of Composer packages. Each package type has a corresponding default installation location. Composer Installers includes the Drupal package types like **drupal-core**, **drupal-module**, **drupal-theme** etc.
+
+#### Scaffold files ####
+What are scaffold files? Files such as index.php, update.php, robots.txt, and .htaccess that serve as assets in Drupal but aren't neatly separated into a dedicated core directory. These assets may also need to exist in specific locations depending on the server configuration or hosting situation.
+
+Starting with 8.8.0 (and continuing with Drupal 9), there is an improved scaffold process. Scaffold files are declared and stored in drupal/core then copied into place. The purpose of declaring certain files as scaffold files is to allow Drupal sites to be fully managed by Composer while allowing individual asset files to be placed in arbitrary locations.
