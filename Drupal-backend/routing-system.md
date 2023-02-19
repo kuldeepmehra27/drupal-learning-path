@@ -30,7 +30,35 @@ example.content:
 
 [Click here](https://www.drupal.org/docs/drupal-apis/routing-system/structure-of-routes) to get more details about routes structure.
 
-#### Using parameters in routes ####
+#### Using parameters in routes / Route variables ####
+A very common requirement is to have a variable route parameter (or more) that gets used by the
+code that maps to the route, for example, the ID or path alias of the page you want to show. These
+parameters can be added by wrapping a certain path element into curly braces, like so:
+```
+path: '/hello/{param}'
+```
+Here, {param} will map to a $param variable that gets passed as an argument to the controller or handler
+responsible for this route. So, if the user goes to the hello/jack path, the $param variable will have the
+jack value and the controller can use that.
+Additionally, Drupal 8 comes with parameter converters that transform the parameter into something
+more meaningful. For example, an entity can be autoloaded and passed to the Controller directly
+instead of an ID. Also, if no entity is found, the route acts as a 404, saving us a few good lines of
+code. To achieve this, we will also need to describe the parameter so that Drupal knows how to
+autoload it. We can do so by adding a route option for that parameter:
+```
+options:
+  parameters:
+    param:
+      type: entity:node
+```
+So, we have now mapped the {param} parameter to the node entity type. Hence, if the user goes to
+hello/1 , the node with the ID of 1 will be loaded (if it exists).
+We can do one better. If, instead of {param}, we name the parameter {node} (the machine name of the
+entity type), we can avoid having to write the parameters option in the route completely. Drupal will
+figure out that it is an entity and will try to load that node by itself. Neat, no?
+So keep these things in mind the next time you need to write dynamic routes.
+
+EX: 
 1. Define the route with parameters in the YAML format like below:
 ```
 mymodule.example:
