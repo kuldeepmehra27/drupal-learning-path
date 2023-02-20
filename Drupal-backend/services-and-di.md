@@ -86,3 +86,4 @@ References:
 - [Drupal official doc](https://www.drupal.org/docs/drupal-apis/services-and-dependency-injection/services-and-dependency-injection-in-drupal-8)
 
 
+:house: [Home Page](README.md) | [<< Previous Page](controller.md) | [Next Page >>](rest-api.md)
