@@ -72,7 +72,7 @@ In this example, we are defining a route named mymodule.example with a path of /
 
 2. Create the controller class in your module & pass this **name** paramerter. This pararmeter name should be same as mentioned in routing.yml file. To see what additional parameters are available in Drupal, [check the documentation.](https://www.drupal.org/docs/8/api/routing-system/parameters-in-routes/using-parameters-in-routes)
 
-References:
+Reference:
 [Drupal routing system](https://www.drupal.org/docs/drupal-apis/routing-system)
 
 :house: [Home Page](README.md) | [Next Page >>](controller.md)
