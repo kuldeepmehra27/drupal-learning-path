@@ -4,7 +4,7 @@ Before moving on with the Controller we set out to write, let's break down the n
 Drupal 8 and how the folder structure needs to be inside a module.
 Drupal 8 uses the PSR-4 namespace autoloading standard. In effect, this means that the namespace of
 all Drupal core and module classes starts with \Drupal . For modules, the base namespace is
-\Drupal\module_name , where module_name is the machine name of the module. This then maps to the /src
+**\Drupal\module_name** , where module_name is the machine name of the module. This then maps to the /src
 folder found inside the module directory (for main integration files). For PHPUnit tests, we have a
 different namespace, as we will see later in the book.
 So essentially, we will need a /src folder inside our module to place all of our classes that need to be
