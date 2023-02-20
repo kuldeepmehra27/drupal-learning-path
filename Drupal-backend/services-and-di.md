@@ -71,6 +71,17 @@ This code defines a service with the ID **my_module.data_service**, using the cl
 - Create the service class: Next, you need to create the class for your custom service. For example:
   ![Custom Service](../images/MyCustomeService.png)
   
+#### How to inject custom services in drupal? ####
+- Statically Example:
+  ![Statically](../images/Statically.png)
+  
+- Injected Example:
+  ![My controller](../images/MyController.png)
+  
+**Note**: Except **.module** file everywhere use **injected way** only because this way is **more secure, faster & testable**.
+  
+[Code Snippet](code-snippet.md)
+
 References:
 - [Drupal official doc](https://www.drupal.org/docs/drupal-apis/services-and-dependency-injection/services-and-dependency-injection-in-drupal-8)
 
