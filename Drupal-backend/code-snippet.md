@@ -2,7 +2,7 @@
 ```
 services:
   my_module.data_service:
-    class: Drupal\my_module\CustomService
+    class: Drupal\my_module\MyCustomService
     arguments: ['@database']
 ````
 
