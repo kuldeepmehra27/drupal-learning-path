@@ -68,4 +68,6 @@ First install [Rest UI](https://www.drupal.org/project/restui) module so we can 
 
 If you want to create custom authentication provider [follow this official doc](https://www.drupal.org/docs/drupal-apis/authentication-api/create-a-custom-authentication-provider).
 
+[How to use JWT token](https://www.drupal.org/docs/contributed-modules/api-authentication/jwt-authentication)
+
 :house: [Home Page](README.md) | [<< Previous Page](services-and-di.md) | [Next Page >>](caching.md)
