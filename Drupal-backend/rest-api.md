@@ -60,7 +60,9 @@ First install [Rest UI](https://www.drupal.org/project/restui) module so we can 
 
 ![Rest permission](/images/Rest-permission.png)
 
+**Test the API:** Use a REST client to test your custom API and ensure that it is working as expected. For example, you can use a tool like Postman to make a requests to the custom resource URL's.
 
+![Rest example](/images/rest-example.png)
 
 #### Create a custom authentication provider ####
 
