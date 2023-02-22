@@ -50,10 +50,11 @@ To install PHPUnit with coverage, you can follow these steps:
 - We need to copy **php.xml.dist** file which is located in **core** folder of drupal, we will copy this file and paste it on Drupal root folder
 rename it to **phpunit.xml** here are some more parameters that you may need to modify. We can use this [sample file](phpunit.xml).
 - We need to create **simpltest & browser_output** directory & setting permissions for it. So follow below command to create dir.
-  $ mkdir -p sites/simpletest/browser_output && chmod -R 777 sites/simpletest
+  $ mkdir -p web/sites/simpletest/browser_output && chmod -R 777 web/sites/simpletest
 - Once you have set up the phpunit.xml file and created your test files, you can run PHPUnit tests for your Drupal site using the following command from the root directory of your Drupal site.
 
   $ ./vendor/bin/phpunit web/core/modules/user/tests/src/Unit/UserRegistrationResourceTest.php (This is for verifying existing test files)
+  
   $ ./vendor/bin/phpunit **--coverage-html html** web/modules/custom/custom_module/ (coverage-html generates coverage report)
   
 **Note:** If you found this errors HP Fatal error:  Uncaught Error: Class 'Behat\Mink\Element\TraversableElement' not found in DocumentElement.php:24 & PHPUnit\Framework\Exception: This test uses TestCase::prophesize(), but phpspec/prophecy is not installed. So install these packages using below command.
