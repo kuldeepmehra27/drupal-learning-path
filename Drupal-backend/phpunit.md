@@ -57,7 +57,7 @@ rename it to **phpunit.xml** here are some more parameters that you may need to 
   
   $ ./vendor/bin/phpunit **--coverage-html html** web/modules/custom/custom_module/ (coverage-html generates coverage report)
   
-**Note:** If you found this errors HP Fatal error:  Uncaught Error: Class 'Behat\Mink\Element\TraversableElement' not found in DocumentElement.php:24 & PHPUnit\Framework\Exception: This test uses TestCase::prophesize(), but phpspec/prophecy is not installed. So install these packages using below command.
+**Note:** If you found these errors HP Fatal error:  Uncaught Error: Class 'Behat\Mink\Element\TraversableElement' not found in DocumentElement.php:24 & PHPUnit\Framework\Exception: This test uses TestCase::prophesize(), but phpspec/prophecy is not installed. So install these packages using below command.
 
 $ composer require behat/mink && composer require --dev phpspec/prophecy
   
