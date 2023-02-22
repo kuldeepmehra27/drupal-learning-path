@@ -20,7 +20,7 @@ To install PHPUnit with coverage, you can follow these steps:
 
 2. Navigate to drupal project root directory.
 
-3. **Require PHPUnit:** In the project directory, run the following command to require PHPUnit and its dependencies:
+3. **Require PHPUnit:** In the project directory, run the following command to require PHPUnit and its dependencies
 
    $ **composer require --dev phpunit/phpunit:8.x**
    
@@ -47,6 +47,8 @@ To install PHPUnit with coverage, you can follow these steps:
 
 #### How to setup phpunit for Drupal? ####
 
+[Drupal official link](https://www.drupal.org/docs/automated-testing/phpunit-in-drupal/running-phpunit-tests)
+
 - We need to copy **php.xml.dist** file which is located in **core** folder of drupal, we will copy this file and paste it on Drupal root folder
 rename it to **phpunit.xml** here are some more parameters that you may need to modify. We can use this [sample file](phpunit.xml).
 - We need to create **simpltest & browser_output** directory & setting permissions for it. So follow below command to create dir.
@@ -57,13 +59,28 @@ rename it to **phpunit.xml** here are some more parameters that you may need to 
   
   $ ./vendor/bin/phpunit **--coverage-html html** web/modules/custom/custom_module/ (coverage-html generates coverage report)
   
+  If we want to test multiple modules at once we need to use testsuit and mentioned modules name in phpunit.xml file. Using below command we can run testsuit
+  
+  $ ./vendor/bin/phpunit --testsuite custom
+  
 **Note:** If you found these errors HP Fatal error:  Uncaught Error: Class 'Behat\Mink\Element\TraversableElement' not found in DocumentElement.php:24 & PHPUnit\Framework\Exception: This test uses TestCase::prophesize(), but phpspec/prophecy is not installed. So install these packages using below command.
 
 $ composer require behat/mink && composer require --dev phpspec/prophecy
-  
 
+- if you want to run multiple test files or test suites at once, you can define them in the phpunit.xml file and then run them using the testsuite element. Here's an example of how you can define a test suite for multiple Drupal modules in the phpunit.xml file:
+```
+<testsuites>
+ <testsuite name="Modules Test Suite">
+   <directory>./modules/custom/abc_module/tests/</directory>
+   <directory>./modules/custom/xyz_module/tests/</directory>
+ </testsuite>
+</testsuites>
+```
+In this example, we've defined a test suite called **Modules Test Suite** that includes two directories containing test files for two custom Drupal modules. You can add additional directory elements as needed to include more modules in the test suite.
 
+To run the test suite, you can use the following command.
 
+$ ./vendor/bin/phpunit --testsuite "Modules Test Suite"
 
 
 
