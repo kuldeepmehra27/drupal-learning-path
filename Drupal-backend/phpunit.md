@@ -26,7 +26,7 @@ To install PHPUnit with coverage, you can follow these steps:
    
    Run this **./vendor/bin/phpunit --version** command to verify PHPUnit version.
    
-   **Note:** 8.x version supported by drupal 9 if you are using drupal 8 install 7.x & this dependency **composer require --dev symfony/phpunit-bridge:^5.3**.
+   **Note:** 8.x version supported by drupal 9 if you are using drupal 8 install 7.x & this dependency **composer require --dev symfony/phpunit-bridge:^5.3**. If you face any issue related to phpunit-bridge install phpunit-bridge dependency in drupal 9 as well.
 
 4. **Install Code Coverage:** PHPUnit comes with a built-in code coverage tool, but to generate coverage reports, you'll need to install the PHP extension Xdebug. You can install it using apt by running the following command:
 
@@ -66,6 +66,7 @@ rename it to **phpunit.xml** here are some more parameters that you may need to 
   $ ./vendor/bin/phpunit --testsuite custom
   
 **Note:** If you found these errors HP Fatal error:  Uncaught Error: Class 'Behat\Mink\Element\TraversableElement' not found in DocumentElement.php:24 & PHPUnit\Framework\Exception: This test uses TestCase::prophesize(), but phpspec/prophecy is not installed. So install these packages using below command.
+If you found any dependency related issue install that dependencies.
 
 $ composer require behat/mink && composer require --dev phpspec/prophecy
 
