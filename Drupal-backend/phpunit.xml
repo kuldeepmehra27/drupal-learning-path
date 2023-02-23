@@ -69,22 +69,20 @@
   <!-- Filter for coverage reports. -->
   <filter>
     <whitelist>
-      <directory>web/includes</directory>
-      <directory>web/lib</directory>
       <!-- Extensions can have their own test directories, so exclude those. -->
       <directory>web/modules/custom</directory>
       <exclude>
         <directory>web/modules/*/src/Tests</directory>
         <directory>web/modules/*/tests</directory>
       </exclude>
-      <directory>web/modules</directory>
+      <directory>web/modules/custom</directory>
       <exclude>
         <directory>web/modules/*/src/Tests</directory>
         <directory>web/modules/*/tests</directory>
         <directory>web/modules/*/*/src/Tests</directory>
         <directory>web/modules/*/*/tests</directory>
+        <directory>web/sites</directory>
       </exclude>
-      <directory>web/sites</directory>
      </whitelist>
   </filter>
 </phpunit>
