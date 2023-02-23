@@ -24,6 +24,10 @@ To install PHPUnit with coverage, you can follow these steps:
 
    $ **composer require --dev phpunit/phpunit:8.x**
    
+   or install with all dependencies.
+   
+   $ **composer require --dev phpunit/phpunit:8.x --with-dependencies **
+   
    Run this **./vendor/bin/phpunit --version** command to verify PHPUnit version.
    
    **Note:** 8.x version supported by drupal 9 if you are using drupal 8 install 7.x & this dependency **composer require --dev symfony/phpunit-bridge:^5.3**. If you face any issue related to phpunit-bridge install phpunit-bridge dependency in drupal 9 as well.
