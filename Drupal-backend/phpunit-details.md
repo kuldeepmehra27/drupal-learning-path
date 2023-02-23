@@ -72,5 +72,5 @@ In PHPUnit, @codeCoverageIgnore is an annotation that can be used to exclude a m
 @codeCoverageIgnoreStart and @codeCoverageIgnoreEnd are annotations used in PHPUnit to **exclude specific sections of code** from being included in the code coverage report. These annotations mark the beginning and end of the code block to be ignored and can be useful when testing code that interacts with external dependencies or contains debug or experimental code.
 
 
-:house: [Home Page](README.md) | [<< Previous Page](phpunit.md) | [Next Page >>](examples.md)
+:house: [Home Page](README.md) | [<< Previous Page](phpunit.md) | [Next Page >>](phpunit-examples.md)
 
