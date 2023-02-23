@@ -4,7 +4,7 @@
 
 PHPUnit is a unit testing framework for PHP, and it is used in Drupal to write and run automated tests for Drupal code. PHPUnit is used to test different components of the system, such as modules, themes, and core functionality. Writing tests with PHPUnit helps ensure that Drupal code is working as expected, making it easier to identify and fix bugs, and catch problems early to ensure that the code is stable and reliable.
 
-#### Why use phpunit? ####
+#### Why use PHPUnit? ####
 
 - **Automated testing:** PHPUnit allows for the creation of automated tests for Drupal code.
 - **Coverage analysis:** PHPUnit generates reports that show how much of your Drupal code has been tested.
@@ -12,7 +12,7 @@ PHPUnit is a unit testing framework for PHP, and it is used in Drupal to write a
 - **Community support:** PHPUnit has a large community of developers who use it for testing Drupal code, providing many resources for learning and troubleshooting.
 - **Best practices:** PHPUnit follows best practices for writing tests, such as using assertions to check code output, ensuring reliable and accurate tests.
 
-#### How to install/setup phpunit? ####
+#### How to install/setup PHPUnit? ####
 
 To install PHPUnit with coverage, you can follow these steps:
 
@@ -26,7 +26,7 @@ To install PHPUnit with coverage, you can follow these steps:
    
    Run this **./vendor/bin/phpunit --version** command to verify PHPUnit version.
    
-   **Note:** 8.x version supported by drupal 9 if you are using drupal 8 install 7.x.
+   **Note:** 8.x version supported by drupal 9 if you are using drupal 8 install 7.x & this dependency **composer require --dev symfony/phpunit-bridge:^5.3**.
 
 4. **Install Code Coverage:** PHPUnit comes with a built-in code coverage tool, but to generate coverage reports, you'll need to install the PHP extension Xdebug. You can install it using apt by running the following command:
 
