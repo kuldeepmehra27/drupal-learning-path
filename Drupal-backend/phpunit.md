@@ -91,7 +91,4 @@ $ ./vendor/bin/phpunit --testsuite "Modules Test Suite"
 
 
 
-
-
-
-:house: [Home Page](README.md) | [<< Previous Page](database.md)
+:house: [Home Page](README.md) | [<< Previous Page](database.md) | [Next Page >>](phpunit-details.md)
