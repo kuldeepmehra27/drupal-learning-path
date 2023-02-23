@@ -49,7 +49,7 @@ To install PHPUnit with coverage, you can follow these steps:
 
 [Drupal official link](https://www.drupal.org/docs/automated-testing/phpunit-in-drupal/running-phpunit-tests)
 
-- We need to copy **php.xml.dist** file which is located in **core** folder of drupal, we will copy this file and paste it on Drupal root folder
+- We need to copy **phpunit.xml.dist** file which is located in **core** folder of drupal, we will copy this file and paste it on Drupal root folder
 rename it to **phpunit.xml** here are some more parameters that you may need to modify. We can use this [sample file](phpunit.xml).
 - We need to create **simpltest & browser_output** directory & setting permissions for it. So follow below command to create dir.
 
