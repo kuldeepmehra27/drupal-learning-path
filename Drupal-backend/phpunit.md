@@ -45,7 +45,7 @@ To install PHPUnit with coverage, you can follow these steps:
       with Xdebug v3.1.6, Copyright (c) 2002-2022, by Derick Rethans   <--- This line showed Xdebug enabled successfully.
    ```
 
-#### How to setup phpunit for Drupal? ####
+#### How to setup PHPUnit for Drupal? ####
 
 [Drupal official link](https://www.drupal.org/docs/automated-testing/phpunit-in-drupal/running-phpunit-tests)
 
