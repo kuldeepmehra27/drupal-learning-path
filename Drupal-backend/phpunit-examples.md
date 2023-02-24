@@ -37,6 +37,6 @@ $ **./vendor/bin/phpunit --coverage-html html_reports web/modules/custom/custom_
 
 This is test file: https://github.com/kuldeepmehra27/custom_module/tree/master/tests/src/Unit/Services/MyCustomServiceTest.php
 
-
+> If you want to explore more about Drupal class methods related to PHPUnit testing, you can check the Drupal core PHPUnit test files. These files provide in-depth examples of how to create test classes, use PHPUnit's assertion methods, and interact with Drupal services and objects. By studying the core tests, you can gain a better understanding of how Drupal works and how to write reliable and maintainable test code for your own modules.
 
 :house: [Home Page](README.md) | [<< Previous Page](phpunit-details.md)
