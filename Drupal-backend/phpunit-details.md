@@ -59,6 +59,14 @@ In PHPUnit, **assertions are methods that verify expected results during the exe
 
 setUp() is a method in PHPUnit that is **called before each test method and is used to set up the test environment** and prepare objects for the test. It is used to perform repetitive tasks required for each test case method, like initializing objects or connecting to databases.
 
+#### ContainerBuilder() ####
+
+ContainerBuilder is a class in Drupal used to **manage the dependency injection container**, which holds and manages objects and services throughout the application. It is used to define and register services, set parameters, and manage dependencies.
+
+#### \Drupal::setContainer() ####
+
+\Drupal::setContainer() is a static method in Drupal **that sets the global service container**, which holds and manages objects and services throughout the application, for the current request. It allows developers to replace the default container with a custom implementation created using the ContainerBuilder class. 
+
 #### @covers ####
 
 @covers is a PHPUnit annotation used to explicitly specify which code is being covered by a test method. It can be used to ensure that code coverage reports accurately reflect the code being tested, but may require updates whenever the code being tested is refactored or updated.
@@ -71,6 +79,9 @@ In PHPUnit, @codeCoverageIgnore is an annotation that can be used to exclude a m
 
 @codeCoverageIgnoreStart and @codeCoverageIgnoreEnd are annotations used in PHPUnit to **exclude specific sections of code** from being included in the code coverage report. These annotations mark the beginning and end of the code block to be ignored and can be useful when testing code that interacts with external dependencies or contains debug or experimental code.
 
+#### @dataProvider ####
+
+In PHPUnit, @dataProvider is used to specify a method **that provides data to a test method**. The data provider method should return an array of arrays or an Iterator object where each item is an array containing the data for each test case. The test method is executed once for each set of data provided by the data provider method, and the arguments of the test method are set to the values of the array items.
 
 :house: [Home Page](README.md) | [<< Previous Page](phpunit.md) | [Next Page >>](phpunit-examples.md)
 
