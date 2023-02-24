@@ -6,7 +6,8 @@ To create a PHPUnit test file in Drupal, you can follow these steps:
 
 2. **Create tests/src/Unit folders:** Inside the my_module directory, create folders named tests/src/Unit.
 
-3. **Create a PHPUnit test file:** Inside the tests folder, create a new PHP file with the name of your test, for example, MyModuleTest.php.
+3. **Create a PHPUnit test file:** Inside the tests folder, create a new PHP file with the name of your test, for example, **MyModuleTest.php**.
+   **Note:** The convention is to append the word "Test" as a suffix to every test file.
 
 4. **Include the necessary dependencies:** In your test file, include the necessary dependencies using the use keyword. For example: **use Drupal\Tests\UnitTestCase;**
 
