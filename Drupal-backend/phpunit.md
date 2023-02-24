@@ -26,7 +26,7 @@ To install PHPUnit with coverage, you can follow these steps:
    
    or install with all dependencies.
    
-   $ **composer require --dev phpunit/phpunit:8.x --with-dependencies **
+   $ **composer require --dev phpunit/phpunit:8.x --with-dependencies**
    
    Run this **./vendor/bin/phpunit --version** command to verify PHPUnit version.
    
