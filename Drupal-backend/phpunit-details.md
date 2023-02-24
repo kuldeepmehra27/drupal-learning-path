@@ -87,5 +87,10 @@ In PHPUnit, @codeCoverageIgnore is an annotation that can be used to exclude a m
 
 In PHPUnit, @dataProvider is used to specify a method **that provides data to a test method**. The data provider method should return an array of arrays or an Iterator object where each item is an array containing the data for each test case. The test method is executed once for each set of data provided by the data provider method, and the arguments of the test method are set to the values of the array items.
 
+#### tearDown() ####
+
+The teardown method (also known as tearDown()) is a method defined in a test class that is executed automatically after each test method in the class has been run. **Its purpose is to clean up any resources or reset any state changes made during the test method**, ensuring that subsequent test methods are not affected by the previous test method. The tearDown() method is used to perform various cleanup tasks such as closing database connections, removing temporary files, resetting global variables, or restoring a system configuration, to ensure a clean and consistent environment for each test method.
+
+
 :house: [Home Page](README.md) | [<< Previous Page](phpunit.md) | [Next Page >>](phpunit-examples.md)
 
