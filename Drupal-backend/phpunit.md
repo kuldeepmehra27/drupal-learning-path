@@ -37,7 +37,7 @@ To install PHPUnit with coverage, you can follow these steps:
    
    **Note:** 8.x phpunit version supported by drupal 9 if you are using drupal 8 install 7.x version.
    
-4. **Install Code Coverage:** PHPUnit comes with a built-in code coverage tool, but to generate coverage reports, you'll need to install the PHP extension Xdebug. You can install it using apt by running the following command:
+4. **Install Code Coverage:** PHPUnit comes with a built-in code coverage tool, but to generate coverage reports, you'll need to install the PHP extension Xdebug. You can install it using following command:
 
     $ **sudo apt-get install php7.4-xdebug**
     
@@ -93,6 +93,6 @@ To run the test suite, you can use the following command.
 
 $ ./vendor/bin/phpunit --testsuite "Modules Test Suite"
 
-
+**Note:** These all are commands and setup validated and tested on **Ubuntu OS**. For other **OS** only XDEBUG setup (steps 4 & 5) are different.
 
 :house: [Home Page](README.md) | [<< Previous Page](database.md) | [Next Page >>](phpunit-details.md)
