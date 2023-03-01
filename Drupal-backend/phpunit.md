@@ -74,10 +74,9 @@ rename it to **phpunit.xml** here are some more parameters that you may need to 
   
   $ ./vendor/bin/phpunit --testsuite custom
   
-**Note:** If you found these errors HP Fatal error:  Uncaught Error: Class 'Behat\Mink\Element\TraversableElement' not found in DocumentElement.php:24 & PHPUnit\Framework\Exception: This test uses TestCase::prophesize(), but phpspec/prophecy is not installed. So install these packages using below command.
-If you found any dependency related issue install that dependencies.
+**Note:** If you found these errors HP Fatal error:  Uncaught Error: Class **'Behat\Mink\Element\TraversableElement'** not found in DocumentElement.php:24 & PHPUnit\Framework\Exception: This test uses TestCase::prophesize(), but phpspec/prophecy is not installed. So install these packages using below command. If you found any dependency related issue install that dependencies.
 
-$ composer require behat/mink && composer require --dev phpspec/prophecy
+$ **composer require behat/mink && composer require --dev phpspec/prophecy**
 
 - if you want to run multiple test files or test suites at once, you can define them in the phpunit.xml file and then run them using the testsuite element. Here's an example of how you can define a test suite for multiple Drupal modules in the phpunit.xml file:
 ```
