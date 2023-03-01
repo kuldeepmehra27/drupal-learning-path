@@ -28,10 +28,15 @@ To install PHPUnit with coverage, you can follow these steps:
    
    $ **composer require --dev phpunit/phpunit:8.x --with-dependencies**
    
-   Run this **./vendor/bin/phpunit --version** command to verify PHPUnit version.
+   Now create a bridge between raw php library and Symfony since Drupal is inheriting symfony.
+   For that we need to install another library run below command
    
-   **Note:** 8.x version supported by drupal 9 if you are using drupal 8 install 7.x & this dependency **composer require --dev symfony/phpunit-bridge:^5.3**. If you face any issue related to phpunit-bridge install phpunit-bridge dependency in drupal 9 as well.
-
+   $ **composer require --dev symfony/phpunit-bridge:^5.3**
+   
+   Run this $ **./vendor/bin/phpunit --version** command to verify PHPUnit version.
+   
+   **Note:** 8.x phpunit version supported by drupal 9 if you are using drupal 8 install 7.x version.
+   
 4. **Install Code Coverage:** PHPUnit comes with a built-in code coverage tool, but to generate coverage reports, you'll need to install the PHP extension Xdebug. You can install it using apt by running the following command:
 
     $ **sudo apt-get install php7.4-xdebug**
