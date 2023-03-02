@@ -41,7 +41,9 @@ $ **./vendor/bin/phpunit --coverage-html test-reports web/modules/custom/custom_
  
   After running tests on your custom Drupal module, navigate to the root folder of your project and check the **test-reports** folder. Inside the **test-reports** folder, you should see an **index.html** file. Open this file in your web browser to view the coverage details of your custom module.
 
-
+  ![PHPUnit test report](/images/PHPUnit-test-report.png)
+  
+  
 This is test file: https://github.com/kuldeepmehra27/custom_module/tree/master/tests/src/Unit/Services/MyCustomServiceTest.php
 
 > If you're looking to delve deeper into Drupal class methods that are related to PHPUnit testing, a great resource to explore is the Drupal core PHPUnit test files. These files offer comprehensive examples of how to develop test classes, utilize PHPUnit's assertion methods, and engage with Drupal services and objects. By examining these core tests, you can enhance your comprehension of how Drupal operates and how to compose dependable and sustainable test code for your own modules.
