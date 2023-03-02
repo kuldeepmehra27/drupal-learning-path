@@ -35,7 +35,7 @@ To install PHPUnit with coverage, you can follow these steps:
    
    Run this $ **./vendor/bin/phpunit --version** command to verify PHPUnit version.
    
-   **Note:** 8.x phpunit version supported by drupal 9 if you are using drupal 8 install 7.x version.
+   **Note:** If you're using Drupal 9, it supports PHPUnit version 8.x. However, if you're using Drupal 8, you should install version 7.x. You can install PHPUnit globally using the **composer global** command, but it's recommended to install it per Drupal project.
    
 4. **Install Code Coverage:** PHPUnit comes with a built-in code coverage tool, but to generate coverage reports, you'll need to install the PHP extension Xdebug. You can install it using following command:
 
@@ -66,9 +66,11 @@ rename it to **phpunit.xml** here are some more parameters that you may need to 
   
 - Once you have set up the phpunit.xml file and created your test files, you can run PHPUnit tests for your Drupal site using the following command from the root directory of your Drupal site.
 
-  $ ./vendor/bin/phpunit web/core/modules/user/tests/src/Unit/UserRegistrationResourceTest.php (This is for verifying existing test files)
+  $ **./vendor/bin/phpunit web/core/modules/user/tests/src/Unit/UserRegistrationResourceTest.php** (This is for verifying existing drupal core test files)
   
-  $ ./vendor/bin/phpunit **--coverage-html html** web/modules/custom/custom_module/ (coverage-html generates coverage report)
+     ![Phpunit for core](/images/phpunit-for-core.png)
+  
+  $ **./vendor/bin/phpunit --coverage-html html web/modules/custom/custom_module/** (coverage-html generates coverage report)
   
   If we want to test multiple modules at once we need to use testsuit and mentioned modules name in phpunit.xml file. Using below command we can run testsuit
   
