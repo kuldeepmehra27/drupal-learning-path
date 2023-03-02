@@ -43,7 +43,7 @@ To install PHPUnit with coverage, you can follow these steps:
     
     For other OS [follow this](https://xdebug.org/docs/install) link.
 
-5. **Enable Xdebug:** After installing Xdebug, you'll need to enable it in your PHP configuration file. To do this, open your php.ini file and add the following line at bottom **xdebug.mode=coverage** Now run below command to verify xdebug is enabled or not.
+5. **Enable Xdebug:** After installing Xdebug, you'll need to enable it in your PHP configuration file. To do this, open your **php.ini (/etc/php/7.4/cli/php.ini)** file and add the following line at bottom **xdebug.mode=coverage** Now run below command to verify xdebug is enabled or not.
 
   $ **php -v**
   ```
