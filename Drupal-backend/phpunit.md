@@ -84,7 +84,7 @@ rename it to **phpunit.xml** here are some more parameters that you may need to 
   
   $ **./vendor/bin/phpunit --testsuite custom**
 
-- if you want to run multiple test files or test suites at once, you can define them in the phpunit.xml file and then run them using the testsuite element. Here's an example of how you can define a test suite for multiple Drupal modules in the phpunit.xml file:
+- If you need to run multiple test files or suites simultaneously, you can define them in the phpunit.xml file using the **testsuite** element. Here's an example of defining a test suite for multiple Drupal modules in the **phpunit.xml** file:
 ```
 <testsuites>
  <testsuite name="Modules Test Suite">
@@ -99,6 +99,6 @@ To run the test suite, you can use the following command.
 
 $ **./vendor/bin/phpunit --testsuite "Modules Test Suite"**
 
-**Note:** These all are commands and setup validated and tested on **Ubuntu OS**. For other **OS** only XDEBUG setup (steps 4 & 5) are different.
+**Note:** TAll of these commands and setup steps have been validated and tested on the **Ubuntu OS**. However, for other operating systems, the **XDEBUG setup (steps 4 and 5) may vary**.
 
 :house: [Home Page](README.md) | [<< Previous Page](database.md) | [Next Page >>](phpunit-details.md)
