@@ -9,6 +9,10 @@ Prophecy is a testing tool for Drupal that is used to write unit tests for modul
 
 Mocking objects in PHPUnit involves creating objects that **simulate/replicate the behavior of real objects for testing purposes**. This can be useful for isolating code and controlling the behavior of dependencies. PHPUnit provides a built-in mocking framework to create mock objects and define their behavior, helping developers write more robust tests and catch issues early in the development process.
 
+#### What is mean by coverage or code coverage in PHPUnit? ####
+
+Code coverage in PHPUnit is a **measure of how much of your code is covered by automated tests. It shows which lines of code were executed during a test run and which lines were not**, providing a report that helps you identify areas of your code that are not being tested. Code coverage is an important metric for assessing the quality of your tests.
+
 #### What is assertion in PHPunit? ####
 
 In PHPUnit, **assertions are methods that verify expected results during the execution of a test** by comparing actual values produced by the code with expected values. PHPUnit provides a range of assertion methods that can be used to test different types of values, and using assertions helps to catch issues early in the development process by providing useful information when tests fail.
