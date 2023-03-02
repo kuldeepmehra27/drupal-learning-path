@@ -39,7 +39,7 @@ $ **./vendor/bin/phpunit --coverage-html test-reports web/modules/custom/custom_
 
   ![Drupal custom module test](/images/phpunit-for-custom-module.png)
  
-  After running tests on your custom Drupal module, navigate to the root folder of your project and check the **test-reports** folder. Inside the "test-reports" folder, you should see an **index.html** file. Open this file in your web browser to view the coverage details of your custom module.
+  After running tests on your custom Drupal module, navigate to the root folder of your project and check the **test-reports** folder. Inside the **test-reports** folder, you should see an **index.html** file. Open this file in your web browser to view the coverage details of your custom module.
 
 
 This is test file: https://github.com/kuldeepmehra27/custom_module/tree/master/tests/src/Unit/Services/MyCustomServiceTest.php
