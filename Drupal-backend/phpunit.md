@@ -99,6 +99,6 @@ To run the test suite, you can use the following command.
 
 $ **./vendor/bin/phpunit --testsuite "Modules Test Suite"**
 
-**Note:** TAll of these commands and setup steps have been validated and tested on the **Ubuntu OS**. However, for other operating systems, the **XDEBUG setup (steps 4 and 5) may vary**.
+**Note:** All of these commands and setup steps have been validated and tested on the **Ubuntu OS**. However, for other operating systems, the **XDEBUG setup (steps 4 and 5) may vary**.
 
 :house: [Home Page](README.md) | [<< Previous Page](database.md) | [Next Page >>](phpunit-details.md)
