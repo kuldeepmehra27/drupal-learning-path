@@ -69,6 +69,12 @@ rename it to **phpunit.xml** here are some more parameters that you may need to 
   $ **./vendor/bin/phpunit web/core/modules/user/tests/src/Unit/UserRegistrationResourceTest.php** (This is for verifying existing drupal core test files)
   
      ![Phpunit for core](/images/phpunit-for-core.png)
+     
+    **Note:** If you encounter the these errors. Uncaught Error: Class **'Behat\Mink\Element\TraversableElement'** not found in DocumentElement.php:24 & PHPUnit\Framework\Exception: This test uses TestCase::prophesize(), but phpspec/prophecy is not installed. You can resolve them by installing the necessary packages using the following command.
+
+  $ **composer require behat/mink && composer require --dev phpspec/prophecy**
+  
+     If you encounter any dependency related issues during installation, you can resolve them by installing the required dependencies.
   
   $ **./vendor/bin/phpunit --coverage-html test-reports web/modules/custom/custom_module/** (coverage-html generates coverage report)
   
@@ -77,10 +83,6 @@ rename it to **phpunit.xml** here are some more parameters that you may need to 
   If we want to test multiple modules at once we need to use testsuit and mentioned modules name in phpunit.xml file. Using below command we can run testsuit
   
   $ **./vendor/bin/phpunit --testsuite custom**
-  
-**Note:** If you found these errors HP Fatal error:  Uncaught Error: Class **'Behat\Mink\Element\TraversableElement'** not found in DocumentElement.php:24 & PHPUnit\Framework\Exception: This test uses TestCase::prophesize(), but phpspec/prophecy is not installed. So install these packages using below command. If you found any dependency related issue install that dependencies.
-
-$ **composer require behat/mink && composer require --dev phpspec/prophecy**
 
 - if you want to run multiple test files or test suites at once, you can define them in the phpunit.xml file and then run them using the testsuite element. Here's an example of how you can define a test suite for multiple Drupal modules in the phpunit.xml file:
 ```
