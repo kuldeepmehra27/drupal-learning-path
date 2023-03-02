@@ -63,6 +63,8 @@ In PHPUnit, **assertions are methods that verify expected results during the exe
 
 setUp() is a method in PHPUnit that is **called before each test method and is used to set up the test environment** and prepare objects for the test. It is used to perform repetitive tasks required for each test case method, like initializing objects or connecting to databases.
 
+  ![Setup](/images/setup.png)
+
 #### ContainerBuilder() ####
 
 ContainerBuilder is a class in Drupal used to **manage the dependency injection container**, which holds and manages objects and services throughout the application. It is used to define and register services, set parameters, and manage dependencies.
@@ -83,17 +85,25 @@ Argument::any() is a PHPUnit method that lets you indicate a placeholder value f
 
 In PHPUnit, @codeCoverageIgnore is an annotation that can be used to exclude a method or class from being included in the code coverage report. It can be used at the class level to exclude all methods within a class, or at the method level to exclude a specific method. This annotation is useful for testing code that cannot be easily covered by automated tests, but should be used with caution as it can obscure areas of the codebase that are not being tested.
 
+   ![Code coverage ignore](/images/code-coverage-ignore.png)
+   
 #### @codeCoverageIgnoreStart and @codeCoverageIgnoreEnd ####
 
 @codeCoverageIgnoreStart and @codeCoverageIgnoreEnd are annotations used in PHPUnit to **exclude specific sections of code** from being included in the code coverage report. These annotations mark the beginning and end of the code block to be ignored and can be useful when testing code that interacts with external dependencies or contains debug or experimental code.
+  
+   ![code coverage ignore start end](/images/coverage-ignore-start-end.png)
 
 #### @dataProvider ####
 
 In PHPUnit, @dataProvider is used to specify a method **that provides data to a test method**. The data provider method should return an array of arrays or an Iterator object where each item is an array containing the data for each test case. The test method is executed once for each set of data provided by the data provider method, and the arguments of the test method are set to the values of the array items.
 
+   ![Data provider](/images/Data-provider.png)
+
 #### tearDown() ####
 
 The teardown method (also known as tearDown()) is a method defined in a test class that is executed automatically after each test method in the class has been run. **Its purpose is to clean up any resources or reset any state changes made during the test method**, ensuring that subsequent test methods are not affected by the previous test method. The tearDown() method is used to perform various cleanup tasks such as closing database connections, removing temporary files, resetting global variables, or restoring a system configuration, to ensure a clean and consistent environment for each test method.
+
+  ![Data provider](/images/teardown.png)
 
 
 :house: [Home Page](README.md) | [<< Previous Page](phpunit.md) | [Next Page >>](phpunit-examples.md)
