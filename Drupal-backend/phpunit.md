@@ -70,11 +70,13 @@ rename it to **phpunit.xml** here are some more parameters that you may need to 
   
      ![Phpunit for core](/images/phpunit-for-core.png)
   
-  $ **./vendor/bin/phpunit --coverage-html html web/modules/custom/custom_module/** (coverage-html generates coverage report)
+  $ **./vendor/bin/phpunit --coverage-html test-reports web/modules/custom/custom_module/** (coverage-html generates coverage report)
+  
+     ![Phpunit for custom module](/images/phpunit-for-custom-module.png)
   
   If we want to test multiple modules at once we need to use testsuit and mentioned modules name in phpunit.xml file. Using below command we can run testsuit
   
-  $ ./vendor/bin/phpunit --testsuite custom
+  $ **./vendor/bin/phpunit --testsuite custom**
   
 **Note:** If you found these errors HP Fatal error:  Uncaught Error: Class **'Behat\Mink\Element\TraversableElement'** not found in DocumentElement.php:24 & PHPUnit\Framework\Exception: This test uses TestCase::prophesize(), but phpspec/prophecy is not installed. So install these packages using below command. If you found any dependency related issue install that dependencies.
 
@@ -93,7 +95,7 @@ In this example, we've defined a test suite called **Modules Test Suite** that i
 
 To run the test suite, you can use the following command.
 
-$ ./vendor/bin/phpunit --testsuite "Modules Test Suite"
+$ **./vendor/bin/phpunit --testsuite "Modules Test Suite"**
 
 **Note:** These all are commands and setup validated and tested on **Ubuntu OS**. For other **OS** only XDEBUG setup (steps 4 & 5) are different.
 
