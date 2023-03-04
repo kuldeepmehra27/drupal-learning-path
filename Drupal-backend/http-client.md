@@ -8,7 +8,7 @@ You can use below free sites to perform get, post, put & delete operations.
 - https://gorest.co.in/
 - https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
 
-For example code with PHPUnit test cases [check this repo](https://github.com/kuldeepmehra27/custom_module)
+[Check this repo](https://github.com/kuldeepmehra27/custom_module) for reference code with PHPUnit test cases.
 
    ![Http client](/images/http-client.png)
 
