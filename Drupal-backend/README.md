@@ -10,6 +10,7 @@ Drupal backend development involves building and maintaining the server-side com
   - [Plugins](plugins.md)
   - [Database](database.md)
   - [Batch, Queue & Cron](batch-queue-cron.md)
+  - [Http Client](http-client.md)
   
 - [PHPUnit](phpunit.md)
   - [Installation](phpunit.md#how-to-installsetup-phpunit)
